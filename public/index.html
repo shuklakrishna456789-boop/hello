@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JARVIS AI Assistant</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <aside class="sidebar">
+        <div class="brand-wrap">
+          <div class="brand-mark">J</div>
+          <div>
+            <p class="eyebrow">SYSTEM ONLINE</p>
+            <h1>JARVIS</h1>
+          </div>
+        </div>
+
+        <div class="mode-switch">
+          <button class="mode-btn active" data-mode="chat">Chat</button>
+          <button class="mode-btn" data-mode="write">Writing</button>
+        </div>
+
+        <div class="panel">
+          <h2>Generate</h2>
+          <textarea id="imagePrompt" rows="4" placeholder="Describe the image you want to create..."></textarea>
+          <button id="generateImageBtn" class="primary-btn">Create image</button>
+          <div id="imageResult" class="image-result hidden"></div>
+        </div>
+
+        <div class="panel">
+          <h2>Analyze PDF</h2>
+          <input id="pdfInput" type="file" accept="application/pdf" />
+          <textarea id="pdfQuestion" rows="4" placeholder="Ask a question about the document..."></textarea>
+          <button id="analyzePdfBtn" class="secondary-btn">Analyze PDF</button>
+        </div>
+      </aside>
+
+      <main class="chat-panel">
+        <header class="topbar">
+          <div>
+            <p class="eyebrow">INTELLIGENCE CORE</p>
+            <h2>Personal AI Assistant</h2>
+          </div>
+          <button id="clearChatBtn" class="ghost-btn">Clear</button>
+        </header>
+
+        <div id="chatLog" class="chat-log" aria-live="polite"></div>
+
+        <div class="composer-wrap">
+          <textarea id="messageInput" rows="1" placeholder="Ask JARVIS anything..."></textarea>
+          <div class="composer-actions">
+            <button id="voiceBtn" class="icon-btn" title="Use voice input">🎙️</button>
+            <button id="sendBtn" class="primary-btn">Send</button>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
