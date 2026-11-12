@@ -21,23 +21,22 @@ A responsive, dark futuristic AI assistant website built with HTML, CSS, JavaScr
 
 ## Run locally
 
-1. Extract the ZIP file.
-2. Open a terminal in the `jarvis-ai-assistant` folder.
-3. Install dependencies:
+1. Open a terminal in the project folder.
+2. Install dependencies:
 
    ```bash
    npm install
    ```
 
-4. Copy `.env.example` to `.env`.
-5. Open `.env` and replace `replace_with_your_api_key` with your API key.
-6. Start JARVIS:
+3. Copy `.env.example` to `.env`.
+4. Open `.env` and replace `replace_with_your_api_key` with your API key.
+5. Start JARVIS:
 
    ```bash
    npm start
    ```
 
-7. Open http://localhost:3000 in your browser.
+6. Open http://localhost:3000 in your browser.
 
 For development with automatic server restart:
 
